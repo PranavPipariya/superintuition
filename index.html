@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Superintuition is a research company working to understand intelligent systems."
+    />
+    <title>Superintuition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --background: #111213;
+        --surface: #171819;
+        --surface-light: #1d1f20;
+        --text: #d6d6d6;
+        --muted: #8b8e8c;
+        --line: #2b2d2e;
+        --signal: #39ff14;
+        --serif: "Newsreader", Georgia, serif;
+        --signature: "Homemade Apple", cursive;
+        --mono: "SF Mono", "SFMono-Regular", ui-monospace, Menlo, Consolas,
+          "Liberation Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--background);
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--text);
+        background: var(--background);
+        font-family: var(--mono);
+        font-size: 0.9rem;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      ::selection {
+        color: var(--background);
+        background: var(--signal);
+      }
+
+      a {
+        color: var(--signal);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      .page {
+        width: min(calc(100% - 48px), 650px);
+        margin: 0 auto;
+        padding: 50px 0 32px;
+      }
+
+      .wordmark {
+        display: flex;
+        height: 128px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 34px;
+        font-family: var(--mono);
+        font-size: 15px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .wordmark::before {
+        width: 7px;
+        height: 7px;
+        margin-right: 13px;
+        content: "";
+        background: var(--signal);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        color: var(--text);
+        font-family: var(--signature);
+        font-size: 33px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 1.05;
+        text-align: left;
+      }
+
+      .meta {
+        display: grid;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr 1.25fr 0.75fr;
+        gap: 8px;
+      }
+
+      .meta-label {
+        margin: 0 0 4px;
+        color: var(--text);
+        font-family: var(--mono);
+        font-size: 0.9rem;
+      }
+
+      .meta-value {
+        display: inline-flex;
+        margin: 0;
+        padding: 5px 9px;
+        color: var(--muted);
+        background: var(--surface-light);
+        border-radius: 7px;
+        font-family: var(--mono);
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .meta-value a {
+        color: inherit;
+      }
+
+      .meta-value a:hover,
+      .meta-value a:focus {
+        text-decoration: none;
+      }
+
+      .abstract {
+        margin-bottom: 30px;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        text-align: justify;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        color: var(--text);
+        font-family: var(--serif);
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.3;
+        text-align: left;
+      }
+
+      p {
+        margin: 0 0 1em;
+      }
+
+      .manifesto {
+        text-align: justify;
+      }
+
+      .manifesto strong {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .declaration {
+        margin: 1.5em 0;
+        color: #fff;
+        font-family: var(--mono);
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
+      }
+
+      .closing {
+        margin-top: 1.5em;
+      }
+
+      footer {
+        margin-top: 2em;
+        color: var(--muted);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.9rem;
+          line-height: 1.4;
+        }
+
+        .page {
+          width: min(calc(100% - 28px), 650px);
+          padding-top: 38px;
+        }
+
+        .wordmark {
+          height: 100px;
+          margin-bottom: 20px;
+          font-size: 13px;
+        }
+
+        h1 {
+          margin-bottom: 16px;
+          font-size: 33px;
+        }
+
+        .meta {
+          grid-template-columns: 1fr;
+          gap: 12px;
+          margin-bottom: 30px;
+        }
+
+        .abstract {
+          padding: 0;
+          text-align: left;
+        }
+
+        .manifesto {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <!-- <div class="wordmark" aria-label="Superintuition">Superintuition</div> -->
+
+      <h1>superintuition.</h1>
+
+      <section class="meta" aria-label="Company information">
+        <div>
+          <p class="meta-label">Contact</p>
+          <p class="meta-value">
+            <a href="mailto:hello@superintuition.xyz">hello@superintuition.xyz</a>
+          </p>
+        </div>
+        <div>
+          <p class="meta-label">Careers</p>
+          <p class="meta-value">
+            <a href="https://superintuition.xyz/careers">superintuition.xyz/careers</a>
+          </p>
+        </div>
+        <div>
+          <p class="meta-label">Location</p>
+          <p class="meta-value">Remote + Delhi</p>
+        </div>
+      </section>
+
+
+
+      <article class="manifesto">
+        <p>
+          <strong>Intelligence is being built faster than it is understood.</strong>
+        </p>
+
+        <p>
+          The dominant method works. Add data, add compute, optimize until the
+          answers look right. It has produced systems of extraordinary
+          capability, and it will produce more.
+        </p>
+
+        <p>
+          It has not produced understanding. What a trained model represents,
+          the computations those representations support, and why a capability
+          appears when it does are largely unknown. We measure behavior because
+          we cannot yet read mechanism.
+        </p>
+
+        <p class="declaration">
+          A trained model is not a finished product.<br />
+          It is an unexamined object.
+        </p>
+
+        <p>
+          Consider how a physicist works through a problem in mechanics. They do
+          not search a list of equations. They can see what the system is doing,
+          and the right law is obvious before it is written down. That is what
+          intuition actually is: not a guess, but the felt shape of principles
+          that are genuinely understood.
+        </p>
+
+        <p>
+          We want that footing with learned systems. Superintuition studies what
+          training creates, from the inside: the structures a network forms, the
+          algorithms it implements, and the mechanisms that produce
+          generalization. We are after explanations that are causal, predictive,
+          and precise enough to act on.
+        </p>
+
+        <p>
+          This matters for reliability, control, and safety. It matters just as
+          much for capability. A field that understands its own artifacts can
+          design them, instead of discovering them by accident.
+        </p>
+
+        <p>
+          We begin with artificial intelligence. We do not assume the questions
+          end there. Intelligence is not only a property of machines, and the
+          principles that explain one system may explain others.
+        </p>
+
+        <p class="closing">
+          We are a small team of researchers and engineers working to understand
+          intelligence from first principles.
+        </p>
+
+        <p>
+          <strong>We intend to understand it well enough to build it deliberately.</strong>
+        </p>
+      </article>
+
+      <footer>Superintuition © 2026</footer>
+    </main>
+  </body>
+</html>
